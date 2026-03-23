@@ -70,6 +70,52 @@ The following **quality dimensions** were analyzed:
 Each metric represents the severity of design flaws affecting that dimension.
 
 ---
+## 📊 Types of Analysis
+
+This project includes **two levels of analysis**:
+
+---
+
+### 1️⃣ Raw Design Flaw Counts
+
+These represent the **absolute number of detected issues** in each version:
+
+- Complexity flaws  
+- Coupling flaws  
+- Cohesion flaws  
+- Encapsulation flaws  
+- Inheritance flaws  
+- Total design flaws  
+
+📌 These help answer:  
+**“How many issues exist in the system?”**
+
+---
+
+### 2️⃣ Quality Deficit Indices
+
+These represent the **severity and impact of design flaws**, normalized by system characteristics:
+
+- Complexity deficit  
+- Coupling deficit  
+- Cohesion deficit  
+- Encapsulation deficit  
+- Inheritance deficit  
+- Overall Quality Deficit Index  
+
+📌 These help answer:  
+**“How severe are the design issues?”**
+
+---
+
+### 🔍 Why Both Matter
+
+- Raw counts show the **volume of issues**
+- Deficit indices show the **architectural impact of those issues**
+
+Together, they provide a **more complete and meaningful understanding of software quality evolution**
+
+---
 
 ## 🔍 Key Findings
 
@@ -99,6 +145,8 @@ Each metric represents the severity of design flaws affecting that dimension.
 ├── Report.pdf # Full analysis report  
 ├── CommonsLang_Detection.xlsx # Raw data + graphs  
 ├── graphs/ # Exported visualizations  
+&nbsp;|&emsp;&emsp;&emsp;├── raw_counts/  
+&nbsp;|&emsp;&emsp;&emsp;└── deficit_indices/  
 ├── infusion_screenshots/ # Tool outputs   
 └── README.md  
 
@@ -115,12 +163,6 @@ Each metric represents the severity of design flaws affecting that dimension.
 4. Exported results to Excel  
 5. Generated graphs to visualize trends  
 6. Interpreted evolution of software quality  
-
----
-
-## 📸 Sample Analysis (Optional Section)
-
-> *(You can add screenshots here later if you want to make it look even stronger)*
 
 ---
 
